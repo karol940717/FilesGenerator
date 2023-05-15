@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="460.0" prefWidth="729.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.filesgenerator.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <HBox prefHeight="422.0" prefWidth="700.0">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="200.0">
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                    <children>
+                        <Label text="Dane najmu" />
+                        <GridPane>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <DatePicker fx:id="datePicker" prefHeight="26.0" prefWidth="284.0" promptText="Data zawarcia umowy/najmu " />
+                                <ComboBox fx:id="comboBoxRegisterNumber" editable="true" onAction="#onActionComboBox" prefHeight="26.0" prefWidth="260.0" promptText="Numer rejestracyjny" GridPane.rowIndex="1" />
+                                <TextField fx:id="textFieldMakeAndModel1" promptText="Marka i model" GridPane.rowIndex="2" />
+                                <TextField fx:id="textFieldVIN" promptText="VIN" GridPane.rowIndex="3" />
+                                <TextField fx:id="textFieldCategory" promptText="Segment" GridPane.rowIndex="4" />
+                                <TextField GridPane.rowIndex="5" />
+                                <TextField fx:id="textFieldPrice" promptText="Stawka" GridPane.rowIndex="5" />
+                                <TextField fx:id="textFieldFuel" promptText="Paliwo" GridPane.rowIndex="6" />
+                                <TextField fx:id="textFieldCompany" promptText="Spółka" GridPane.rowIndex="7" />
+                                <TextField fx:id="textFieldNip" promptText="NIP" GridPane.rowIndex="8" />
+                                <TextField fx:id="textFieldAgreementLocation" promptText="Miejscowość umowy" GridPane.rowIndex="9" />
+                                <DatePicker fx:id="datePickerSecond" prefWidth="227.0" promptText="Data zwrotu" GridPane.rowIndex="10" />
+                                <Label text="© Karol Chotkiewicz" GridPane.rowIndex="13" />
+
+                            </children>
+                        </GridPane>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="230.0">
+                    <children>
+                        <Label text="Poszkodowany" />
+                        <GridPane>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <TextField fx:id="textFieldNameAndSurname" promptText="Imię i nazwisko" />
+                                <TextField fx:id="textFieldRegisterNumber1" promptText="Numer rejestracyjny" GridPane.rowIndex="1" />
+                                <TextField fx:id="textFieldMakeAndModel2" promptText="Marka i model" GridPane.rowIndex="2" />
+                                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                    <children>
+                                        <TextField fx:id="textFieldIdSeries" prefHeight="26.0" prefWidth="76.0" promptText="Seria " />
+                                        <TextField fx:id="textFieldIdNumber" prefHeight="26.0" prefWidth="146.0" promptText="Numer dowodu" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+                                    <children>
+                                        <TextField fx:id="textFiledPostCode" prefHeight="26.0" prefWidth="156.0" promptText="Kod pocztowy" />
+                                        <TextField fx:id="textFieldLocation" prefHeight="26.0" prefWidth="226.0" promptText="Miejscowość" />
+                                    </children>
+                                </HBox>
+                                <TextField fx:id="textFieldStreetNameAndNumber" promptText="Ulica, nr. budynku/lokalu" GridPane.rowIndex="5" />
+                                <TextField fx:id="textFieldEmail" promptText="e-mail" GridPane.rowIndex="6" />
+                                <TextField fx:id="textFieldPhoneNumber" promptText="Numer telefonu" GridPane.rowIndex="7" />
+                                <Hyperlink onAction="#onActionContract" text="UMOWA NAJMU + załącznik.docx" GridPane.rowIndex="9" />
+                                <Hyperlink onAction="#onActionCession" text="CESJA WIERZYTELNOŚCI.docx" GridPane.rowIndex="10" />
+                                <Hyperlink onAction="#onActionCessionRepair" text="CESJA NAPRAWA.docx" GridPane.rowIndex="11" />
+                                <Hyperlink onAction="#onActionCommision" text="PEŁNOMOCNICTWO GŁÓWNE.docx" GridPane.rowIndex="12" />
+                                <Hyperlink onAction="#onActionProtocol" text="PROTOKÓŁ.docx" GridPane.rowIndex="13" />
+
+
+                            </children>
+                        </GridPane>
+                    </children>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="230.0">
+                    <children>
+                        <Label text="Sprawca" />
+                        <GridPane>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <TextField fx:id="textFieldInsuranceNumber" promptText="Polisa OC" />
+                                <TextField fx:id="textFieldRegisterNumber2" promptText="Numer rejestracyjny" GridPane.rowIndex="1" />
+                                <ComboBox fx:id="comboBoxInsuranceCompany" editable="true" onAction="#onActionComboBoxInsurer" prefWidth="218.0" promptText="Zakład ubezpieczeń sprawcy" GridPane.rowIndex="2" />
+                                <TextField fx:id="textFiledInsurerFullName" promptText="ZU sprawcy pełna nazwa" GridPane.rowIndex="3" />
+                                <TextField fx:id="textFiledApplicationNumber" promptText="Numer szkody" GridPane.rowIndex="4" />
+                                <TextField fx:id="textFiledAccidentLocation" promptText="Miejsce Zdarzenia" GridPane.rowIndex="5" />
+                                <Button mnemonicParsing="false" onAction="#onActionButtonClear" text="Wyczyść pola" GridPane.rowIndex="13">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <GridPane.margin>
+                                        <Insets left="120.0" />
+                                    </GridPane.margin>
+                                </Button>
+                                <Hyperlink onAction="#onActionReturn" text="ZWROT.docx" GridPane.rowIndex="9" />
+                        <Hyperlink onAction="#onActionCarDeclaration" text="OŚWIADCZENIE O POTRZ. AZ.docx" GridPane.rowIndex="10" />
+
+
+                            </children>
+                        </GridPane>
+                    </children>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>
